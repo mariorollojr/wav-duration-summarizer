@@ -19,10 +19,13 @@ This script recursively scans a folder structure to count `.wav` audio files and
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/wav-duration-summarizer.git
+   ```
 
 2. Install the necessary dependencies:
 
+```python
 pip install mutagen
+```
 
 ### Usage
 
@@ -33,11 +36,13 @@ Example:
 ```python
 main_folder = '/path/to/your/audio/folder'
 output_csv = 'wav_file_durations.csv'
+```
 
 2. Run the script:
 
 ```bash
 python wav_duration_summary.py
+```
 
 3. The script will print the number of .wav files found and the total duration in both seconds and formatted time.
 
@@ -47,9 +52,12 @@ python wav_duration_summary.py
 Process completed. Found 340 audio files with a total duration of 906397.000000 seconds.
 Total duration: 251 hours, 46 minutes, and 37.00 seconds.
 Detailed durations saved to wav_file_durations.csv
+```
 
 #### CSV Output
+
 The CSV file will contain two columns: the file path and the duration in seconds for each .wav file.
 
 #### Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue for any improvements or bugs.
